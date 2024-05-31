@@ -1,0 +1,18 @@
+{
+  "name": "flow-comment-for-youtube-video",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npx crx-monkey build",
+    "dev": "npx crx-monkey dev"
+  },
+  "devDependencies": {
+    "crx-monkey": "^0.9.0",
+    "@types/chrome": "^0.0.268"
+  },
+  "dependencies": {
+    "@xpadev-net/niconicomments": "^0.2.71",
+    "youtubei.js": "latest"
+  }
+}
