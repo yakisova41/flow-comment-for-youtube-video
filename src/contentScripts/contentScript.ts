@@ -113,7 +113,7 @@ function formatToNicoComment(videoDuration: number, currentTime: number, comment
         if(commentText !== undefined) {
             let pos =  ((videoDuration * 1000 / comments.length) * commentId) + (currentTime * 1000);
 
-            const timeMatch = commentText.match(/^([0-9]*:[0-9]*)\s.*$/);
+            const timeMatch = commentText.match(/^([0-9]{1}(:[0-9]{2}){1})(.|\n|\s)*$/);
 
             if(timeMatch !== null) {
                 const time = timeMatch[1];
